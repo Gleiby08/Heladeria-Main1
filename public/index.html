@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelato Paradiso - Heladería Artesanal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <i class="fas fa-ice-cream logo-icon"></i>
+                    <h1>Gelato Paradiso</h1>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#sabores">Sabores</a></li>
+                    <li><a href="#historia">Nuestra Historia</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <!-- Botón de Acceso Administrador -->
+                <a href="admin.html" class="btn btn-dark">Acceso Administrador</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="promo-badge">¡15% OFF en tu primer pedido!</div>
+            <h2>El Arte del Helado Artesanal</h2>
+            <p>Descubre nuestros helados gourmet elaborados con ingredientes naturales de primera calidad</p>
+            <a href="#sabores" class="btn btn-primary" style="font-size: 1.1rem; padding: 12px 30px;">Ver Sabores</a>
+        </div>
+    </section>
+
+    <!-- Sabores Section -->
+    <section id="sabores">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Exquisitos Sabores</h2>
+                <p>Explora nuestra amplia selección de helados artesanales, desde clásicos atemporales hasta creaciones innovadoras</p>
+            </div>
+            
+            <!-- Filter Controls -->
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="crema">Cremas</button>
+                <button class="filter-btn" data-filter="chocolate">Chocolates</button>
+                <button class="filter-btn" data-filter="fruta">Frutas</button>
+                <button class="filter-btn" data-filter="especial">Especiales</button>
+            </div>
+
+            <div class="flavors-container" id="flavors-list">
+                <!-- Flavors will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Historia Section -->
+    <section id="historia">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestra Pasión por el Helado</h2>
+                <p>Conoce la historia detrás de cada cucharada de felicidad</p>
+            </div>
+            
+            <div class="story-content">
+                <div class="story-text fade-in">
+                    <p>En el corazón de la ciudad, nació Gelato Paradiso con un sueño: rescatar la tradición del helado artesanal utilizando solo los mejores ingredientes naturales.</p>
+                    <p style="margin: 20px 0;">Nuestro fundador, Marco Bianchi, aprendió el arte del gelato en las heladerías familiares de Florencia. Tras años de perfeccionamiento, trajo a nuestra ciudad técnicas tradicionales italianas combinadas con ingredientes locales de temporada.</p>
+                    <p>Cada mañana, comenzamos con leche fresca de granjas locales, frutas de temporada recogidas en su punto óptimo de maduración, y los mejores chocolates y nueces seleccionados personalmente. Nada de colorantes artificiales, saborizantes o conservantes. Solo autenticidad en cada cucharada.</p>
+                </div>
+                
+                <div class="story-image fade-in">
+                    <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80" alt="Heladero artesanal" loading="lazy" decoding="async">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios Section -->
+    <section id="testimonios" class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Lo Que Dicen Nuestros Clientes</h2>
+                <p>La sonrisa de nuestros clientes es nuestra mejor recompensa</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial fade-in">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80" alt="Ana Martínez" loading="lazy" decoding="async">
+                        </div>
+                        <div>
+                            <h3>Ana Martínez</h3>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"El mejor helado vegano que he probado. La textura es increíble y los sabores son auténticos. ¡Mi favorito es el de frambuesa con chocolate!"</p>
+                </div>
+                
+                <div class="testimonial fade-in">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80" alt="Carlos Rodríguez" loading="lazy" decoding="async">
+                        </div>
+                        <div>
+                            <h3>Carlos Rodríguez</h3>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Llevé a mi familia para celebrar un cumpleaños y quedamos encantados. El personal fue muy atento y los helados espectaculares. ¡Volveremos pronto!"</p>
+                </div>
+                
+                <div class="testimonial fade-in">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80" alt="Laura Gómez" loading="lazy" decoding="async">
+                        </div>
+                        <div>
+                            <h3>Laura Gómez</h3>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Como celíaca, es difícil encontrar helados seguros. En Gelato Paradiso tienen opciones sin gluten deliciosas y me siento completamente segura. ¡Gracias!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Gelato Paradiso</h3>
+                    <p>Helados artesanales elaborados con ingredientes naturales y mucho amor.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Horarios</h3>
+                    <ul>
+                        <li><i class="far fa-clock"></i> Lunes a Viernes: 12:00 - 22:00</li>
+                        <li><i class="far fa-clock"></i> Sábados: 11:00 - 23:00</li>
+                        <li><i class="far fa-clock"></i> Domingos: 11:00 - 21:00</li>
+                        <li><i class="far fa-clock"></i> Festivos: 12:00 - 20:00</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. de los Helados, 123</li>
+                        <li><i class="fas fa-phone"></i> +34 912 345 678</li>
+                        <li><i class="fas fa-envelope"></i> hola@gelatoparadiso.com</li>
+                        <li><i class="fab fa-whatsapp"></i> Pedidos por WhatsApp</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Suscríbete</h3>
+                    <p>Recibe descuentos exclusivos y novedades:</p>
+                    <form style="margin-top: 15px;">
+                        <input type="email" placeholder="Tu correo electrónico" style="padding: 10px; width: 100%; border-radius: 5px; border: none; margin-bottom: 10px;">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Suscribirme</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Gelato Paradiso. Todos los derechos reservados. | Heladería Artesanal</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
